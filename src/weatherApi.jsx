@@ -14,7 +14,7 @@ function WebApi(props) {
     if (displayValue !== "") {
       setRequestStatus("pending");
       fetch(
-        `http://api.weatherapi.com/v1/current.json?key=a0095c765c3146b99a7194304251502&q=${displayValue}`
+        `https://api.weatherapi.com/v1/current.json?key=a0095c765c3146b99a7194304251502&q=${displayValue}`
       )
         .then((result) => {
           return result.json();
